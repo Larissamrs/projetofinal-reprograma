@@ -1,6 +1,6 @@
 const express = require("express");
-const cors = require ('cors')
-const database = require ('./data/database')
+const cors = require ('cors');
+const database = require ('./data/database');
 const app = express();
 const lgbtqia = require("./routes/leis.routes");
 

@@ -11,17 +11,17 @@ const getAll = async (req, res) => {
 
 
 const createLei = async (req, res) => {
-  const authHeader = req.get('authorization')
-  const token = authHeader.split(' ')[1]
-  if(authHeader == undefined){
-    return res.status(403).send({message: "Por gentileza informar autorização"})
-  }
-  jwt.verify(token, SECRET, async (err) => {
-    if(err){
-      res.status(403).send({message: "token inválido", err})
-    }
-    const lei = await Lgbtqia.find()
-  })
+  // const authHeader = req.get('authorization')
+  // const token = authHeader.split(' ')[1]
+  // if(authHeader == undefined){
+  //   return res.status(403).send({message: "Por gentileza informar autorização"})
+  // }
+  // jwt.verify(token, SECRET, async (err) => {
+  //   if(err){
+  //     res.status(403).send({message: "token inválido", err})
+  //   }
+  // const lei = await Lgbtqia.find()
+  // })
 
   const lgbtqia = new Lgbtqia({
 
@@ -77,17 +77,17 @@ const updateLei = async (req, res) => {
 };
 
 const deleteLei = async (req, res) => {
-  const authHeader = req.get('authorization')
-  const token = authHeader.split(' ')[1]
-  if(authHeader == undefined){
-    return res.status(403).send({message: "Por gentileza informar autorização"})
-  }
-  jwt.verify(token, SECRET, async (err) => {
-    if(err){
-      res.status(403).send({message: "token inválido", err})
-    }
-    const lei = await Lgbtqia.find()
-  })
+  // const authHeader = req.get('authorization')
+  // const token = authHeader.split(' ')[1]
+  // if(authHeader == undefined){
+  //   return res.status(403).send({message: "Por gentileza informar autorização"})
+  // }
+  // jwt.verify(token, SECRET, async (err) => {
+  //   if(err){
+  //     res.status(403).send({message: "token inválido", err})
+  //   }
+  //   const lei = await Lgbtqia.find()
+  // })
   try{
     const lgbtqia = await lgbtqiaSchema.findById(req.params.id)
     if(lgbtqia == null){

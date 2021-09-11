@@ -1,5 +1,5 @@
 {
-  "name": "on12-projetofinalreprograma",
+  "name": "projetofinal-reprograma",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeniferplacido/On12-projetoFinalReprograma.git"
+    "url": "git+https://github.com/Larissamrs/projetofinal-reprograma.git"
   },
-  "author": "Jenifer Plácido",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jeniferplacido/On12-projetoFinalReprograma/issues"
+    "url": "https://github.com/Larissamrs/projetofinal-reprograma/issues"
   },
-  "homepage": "https://github.com/jeniferplacido/On12-projetoFinalReprograma#readme",
+  "homepage": "https://github.com/Larissamrs/projetofinal-reprograma#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
